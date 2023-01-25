@@ -132,7 +132,7 @@ height: 600px;
   }
   
 
-.textVideo{
+.textvideo{
   padding: 50px;
   }
 
@@ -175,6 +175,7 @@ height: 600px;
   
   .newsletterSection{
     margin-bottom: 100px;
+    padding: 15px;
   }
   .buttonQuizMin:hover { 
     background-color: #393940; 
@@ -187,7 +188,7 @@ height: 600px;
       text-transform: uppercase; 
       color:#15151b; 
       padding: 10px 30px;
-      width: 180px;
+      width: 150px;
       margin: -4px; 
       border: none; 
       border: solid 1px; 
@@ -227,3 +228,4 @@ color: #FFFFFF;
 .claseLucho{
   max-width: 200px;
 }
+
