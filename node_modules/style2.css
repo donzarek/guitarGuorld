@@ -1,0 +1,190 @@
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.sliderdesktop {
+    margin: 0;
+    padding: 0;
+
+}
+
+.carousel-item img{
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.navbar {
+    background-color: #15151B;
+}
+.dropdown-item:hover{
+    background-color: red;
+}
+
+.guitars {
+    padding: 30px;
+}
+h1 {
+    text-transform: uppercase;
+    padding: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.logos{
+    padding: 35px 10px;
+    object-fit: cover;
+    gap: 20px;
+    background-color: #15151B;
+    justify-content: space-evenly;
+}
+
+.logo{
+    max-width:150px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-5px);
+  }
+
+.logo:hover{
+    transform: translateY(-20px);
+  }
+
+.textvideo{
+    padding: 40px;
+
+}
+
+.experts {
+    margin-bottom: 80px;
+    padding: 30px;
+}
+
+.buttonQuiz { 
+    background-color: white; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    color:#15151b; 
+    padding: 10px 50px;  
+    margin: 0px; 
+    border: none; 
+    border: solid 1px; 
+    border-radius: 15px; 
+  
+  } 
+  
+  .buttonQuiz:hover { 
+    background-color: #15151b; 
+    color: #FFFFFF;
+    }
+
+.quizSection {
+    background-image: url("/images/guitarOverlay.png");
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+    color:white;
+}
+
+.newsletterSection{
+    height:450px;
+}
+.buttonQuizMin { 
+    background-color: #15151b; 
+    font-size: small;
+ 
+    text-transform: uppercase; 
+    color:#ffffff; 
+    padding: 10px 30px;  
+    margin: 0px; 
+    border: none; 
+    border: solid 1px; 
+    border-color: #15151b;
+    border-top-right-radius: 20px ; 
+    border-bottom-right-radius: 20px;
+  
+  }
+.buttonQuizMinF { 
+    background-color: white; 
+    font-size: small;
+    text-transform: uppercase; 
+    color:#15151b; 
+    padding: 10px 30px;
+    width: 140px;
+    margin: -4px; 
+    border: none; 
+    border: solid 1px; 
+    border-top-left-radius: 20px ; 
+    border-bottom-left-radius: 20px;
+  
+  } 
+
+  .buttonQuizMin:hover { 
+    background-color: #393940; 
+    color: #ffffff;
+    }
+.subscription{
+margin-top: 30px;
+}
+
+.footerSection{
+    background-color: #15151B;
+    color: #FFFFFF;
+    padding-top: 40px;
+    object-fit: cover;
+    min-height: 250px;
+
+}
+
+.logoFooter{
+    max-width: 300px;
+    padding: 20px;
+}
+
+.textFooter {
+    padding: 20px;
+}
+
+.iconsContainer {
+    max-width: 250px;
+}
+
+.guitar90deg {
+    rotate: 80deg;
+    transition: 0.3s;;
+}
+
+.guitar90deg:hover {
+    rotate:75deg;
+}
+
+.guitarFacts {
+    background-color: #767676;
+}
+
+.guitartitle{
+    margin-top:30px;
+    margin-bottom:-30px;
+}
+
+.guitarPickbox{
+    padding: 30px 0px;
+    margin: 0px 0px;
+    color: white;
+    gap: 10px;
+}
+.guitarPickbox:hover{
+    background-color: #646464;
+    color: white;
+
+}
+
+
+.guitarHistory{
+    height: 300px;
+    background-color: #15151B;
+    color: #FFFFFF;
+}
+
+.datosTecnicos {
+    gap: 20px;
+    text-transform: uppercase;
+}
