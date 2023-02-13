@@ -1,0 +1,277 @@
+$mainColor: #15151B;
+$mainFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$widthLogo: 150px;
+$navbar: $mainColor;
+$bgcolor: #e0d6cd;
+$paddingTextBox: 80px;
+
+.dropshadow{
+    filter: drop-shadow(6px 3px 2px black);
+  }
+body{
+    background-color: $bgcolor;
+}
+
+@mixin styleSection ($color:#e0d6cd,$paddingBot:80px){
+    background-color: $color;
+    min-height: 400px;
+    font-family: $mainFont;
+    h1 , h2{
+        padding-top: 30px;
+        padding-bottom: $paddingBot;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@mixin styleButton ($colorbutton:white, $radius:15px){
+    background-color: $colorbutton; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    color:#15151b; 
+    padding: 10px 50px;  
+    border: none; 
+    border: solid 1px; 
+    border-radius: $radius; 
+     &:hover {
+        background-color: #15151b; 
+        color: #FFFFFF;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+}
+
+@mixin footerStyle{
+    background-color: $mainColor;
+    min-height: 350px;
+    color: white;
+}
+
+@mixin guitars{
+transition: all 0.2s;
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+       
+
+&:hover{
+
+transition: all 0.2s;
+filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+transform: scale(1.1);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(0.1);
+
+
+}
+}
+
+.p{
+    padding:$paddingTextBox
+}
+.sliderdesktop {
+    margin: 0;
+    padding: 0;
+
+}
+
+.carousel-item img{
+    object-fit: cover;
+    min-height: 400px;
+}
+.colornavbar{
+    background-color: $navbar;
+}
+.section1 {
+    @include styleSection;
+    padding: 50px;
+
+    .guitarGrey{
+    @include guitars;
+    }
+
+    }
+.section2 {
+    @include styleSection;
+    padding: 50px 10px 150px 10px;
+    button {
+        @include styleButton;
+    }
+}
+.expertsCol {
+    padding-left: 180px;
+    padding-right: 180px;
+
+}
+.section3 {
+    @include styleSection(white,10px);
+    background-image: url("https://i.postimg.cc/MHcy8Qd3/guitar-Overlay.png");
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+    color:white;
+    button {
+        @include styleButton;
+    
+    }
+}
+.section4 {
+    @include styleSection(white,10px);
+    padding: 50px 10px 80px 10px;
+    button {
+        @include styleButton (#616161, 0px 20px 20px 0px);
+    }
+    input {
+        border-radius: 20px 0px 0px 20px;
+        padding: 10px 50px;  
+        border: solid 1px; 
+        margin-right:-5px;
+    }
+}
+
+.sectionInterna1{
+    @include styleSection;
+    height: 450px;
+    background-image: url("https://i.postimg.cc/Znhbx9Cv/bgv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10px 80px 10px;
+    color: white;
+  }
+.sectionInterna2{
+    @include styleSection;
+
+    h2{
+        margin-top: 50px;
+    }
+    p{
+        padding:$paddingTextBox
+    }
+  }
+.sectionInterna3
+{
+    @include styleSection($mainColor, )
+}
+  .bgrow2{
+    height: 400px;
+    background-image: url("https://i.postimg.cc/8c3qm9yK/pic2.jpg");
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+  }
+  .bgrowGibson{
+    height: 400px;
+    background-image: url("https://i.postimg.cc/rFKwStys/pic2.png");
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+  } 
+  .bgrowSG{
+    height: 400px;
+    background-image: url("https://i.postimg.cc/NFvZLS0R/pic3.png");
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: bottom;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+  }
+  .bgrowFirebird{
+    height: 450px;
+    background-image: url("https://i.postimg.cc/7hfvF0bW/4.png");
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: bottom;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+  }
+  .bgrow{
+    height: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    button{
+        @include styleButton;
+    }
+
+  }
+
+  .sectionInternaGibson{
+    @include styleSection;
+    height: 450px;
+    background-image: url("https://loviesguitars.com/wp-content/uploads/2019/04/IMG_0320.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10px 80px 10px;
+    color: white;
+  }
+  .sectionInternaSG{
+    @include styleSection;
+    height: 450px;
+    background-image: url("https://i.postimg.cc/GtshnZ5Y/5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10px 80px 10px;
+    color: white;
+  }
+  .sectionInternaFirebird{
+    @include styleSection;
+    height: 450px;
+    background-image: url("https://i.postimg.cc/8CpTyFdq/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10px 80px 10px;
+    color: white;
+  }
+footer {
+    @include footerStyle;
+    .footerColumns{
+       padding-top: 60px;
+       padding-bottom: 60px;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+.logos{
+    padding: 35px 15px;
+    object-fit: cover;
+    background-color: $mainColor;
+    justify-content: space-evenly;
+}
+.logo{
+    max-width: $widthLogo;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-5px);
+}
+.logo:hover {
+    transform: translateY(-20px);
+}
+
+.logoFooter{
+    object-fit: cover;
+    max-width: 300px;
+}
+
+.redes{
+    object-fit: cover;
+    max-width: 300px;
+}
+
