@@ -167,7 +167,13 @@ transform: scale(1.1);
 .sectionInterna3
 {
     @include styleSection($mainColor, )
+    
 }
+    button {
+        @include styleButton;
+    
+    }
+
   .bgrow2{
     height: 400px;
     background-image: url("https://i.postimg.cc/8c3qm9yK/pic2.jpg");
