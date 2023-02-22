@@ -121,16 +121,26 @@ transform: scale(1.1);
     }
 }
 .section4 {
-    @include styleSection(white,10px);
+    @include styleSection($bgcolor,10px);
     padding: 50px 10px 80px 10px;
-    button {
+    .buttonDesktop {
         @include styleButton (#616161, 0px 20px 20px 0px);
     }
-    input {
+    .inputDesktop {
         border-radius: 20px 0px 0px 20px;
         padding: 10px 50px;  
         border: solid 1px; 
         margin-right:-5px;
+
+    }
+    .buttonMobile {
+        @include styleButton (#616161, 20px 20px 20px 20px);
+    }
+    .inputMobile {
+        border-radius: 20px 20px 20px 20px;
+        padding: 10px 50px;  
+        border: solid 1px; 
+        margin-bottom: 15px;
     }
 }
 
@@ -273,5 +283,19 @@ footer {
 .redes{
     object-fit: cover;
     max-width: 300px;
+}
+
+@media(min-width:576px)
+{
+    .formMobile{
+        display:none
+    }
+}
+
+@media(max-width:575.98px)
+{
+    .formDesktop{
+        display:none
+    }
 }
 

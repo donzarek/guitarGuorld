@@ -101,7 +101,7 @@ body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 .section4 {
-  background-color: white;
+  background-color: #e0d6cd;
   min-height: 400px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 50px 10px 80px 10px; }
@@ -110,7 +110,7 @@ body {
     padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold; }
-  .section4 button {
+  .section4 .buttonDesktop {
     background-color: #616161;
     font-weight: bold;
     text-transform: uppercase;
@@ -119,15 +119,33 @@ body {
     border: none;
     border: solid 1px;
     border-radius: 0px 20px 20px 0px; }
-    .section4 button:hover {
+    .section4 .buttonDesktop:hover {
       background-color: #15151b;
       color: #FFFFFF;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .section4 input {
+  .section4 .inputDesktop {
     border-radius: 20px 0px 0px 20px;
     padding: 10px 50px;
     border: solid 1px;
     margin-right: -5px; }
+  .section4 .buttonMobile {
+    background-color: #616161;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #15151b;
+    padding: 10px 50px;
+    border: none;
+    border: solid 1px;
+    border-radius: 20px 20px 20px 20px; }
+    .section4 .buttonMobile:hover {
+      background-color: #15151b;
+      color: #FFFFFF;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .section4 .inputMobile {
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 50px;
+    border: solid 1px;
+    margin-bottom: 15px; }
 
 .sectionInterna1 {
   background-color: #e0d6cd;
@@ -311,3 +329,11 @@ footer {
 .redes {
   object-fit: cover;
   max-width: 300px; }
+
+@media (min-width: 576px) {
+  .formMobile {
+    display: none; } }
+
+@media (max-width: 575.98px) {
+  .formDesktop {
+    display: none; } }
